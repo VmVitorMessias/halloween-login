@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+:root {
+    --text-color: hsl(0, 0%, 100%);
+    --gray-color: hsl(0, 1%, 35%);
+    --button-color: hsl(0, 100%, 34%);
+    --main-color: hsl(0, 0%, 0%);
+    --body-color: hsl(0, 1%, 14%);
+
+    --body-font: 'Poppins', sans-serif;
+    --biggest-size: 1.2rem;
+    --small-size: .600rem;
+    --big-small: .800rem;
+
+    --weigth-light: 300;
+    --weight-bold: 600;
+}
+
+body {
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 300px;
+    max-height: 600px;
+    padding: .600rem;
+    justify-content: center;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.status {
+    width: 100%;
+}
+
+.image-login {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.welcome__title {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.registration__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__field input {
+    border: none;
+    background-color: transparent;
+    margin-bottom: -7px;
+    outline: 0;
+}
+
+.registration__field hr {
+    width: 100%;
+    border: 0.5px solid var(--gray-color);
+}
+
+.registration__field p,
+input {
+    color: var(--gray-color);
+}
+
+.buttons__login {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.buttons__login a {
+    text-decoration: none;
+    text-align: center;
+    min-width: 200px;
+    height: 1rem;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.buttons__login a:hover {
+    opacity: 0.6;
+}
+
+.login__google {
+    background-color: var(--gray-color);
+}
+
+.login__button {
+    background-color: var(--button-color);
+}
+
+.create__account {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--gray-color);
+}
+
+.create__account span {
+    color: var(--text-color);
+}
